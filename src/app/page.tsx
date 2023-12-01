@@ -11,8 +11,6 @@ export default async function Home() {
     .then((res) => res.json())
     .then((data) => data?.data?.openai?.items[0]?.image);
 
-
-
   console.log(promt);
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
