@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Press_Start_2P } from "next/font/google";
 import "./globals.css";
 import { Header } from "./header";
 import { Background } from "./background";
-const inter = Inter({ subsets: ["latin"] });
+const pressStartP2 = Press_Start_2P({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Holken",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={pressStartP2.className}>
         <Header />
         <Background />
         <div className="flex items-center justify-center h-screen">

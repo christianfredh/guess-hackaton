@@ -28,12 +28,14 @@ export default function Home() {
 
   return (
     <>
-      <h1 className="uppercase">Ange din unika kod för att gå med i spelet</h1>
+      <h1 className="uppercase text-center">
+        Ange din unika kod för att gå med i spelet
+      </h1>
       {inputRefs.map((ref, index) => (
         <input
           type="text"
           ref={ref}
-          className="border-2 border-orange-500 bg-white w-12 h-12 text-center text-black rounded mx-2"
+          className="uppercase border-2 border-orange-500 bg-white w-12 h-12 text-center text-black rounded mx-2"
           minLength={1}
           maxLength={1}
           onInput={() => handleInput(index)}
