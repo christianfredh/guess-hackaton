@@ -19,10 +19,12 @@ export const Players = () => {
 
   return (
     <>
-      <h2 className="uppercase font-extrabold">deltagare {players.length}</h2>
+      <h2 className="uppercase font-extrabold mb-4">
+        deltagare {players.length}
+      </h2>
       <ul className="uppercase list-none">
         {players.map((player, index) => (
-          <li key={index}>
+          <li className="mb-4" key={index}>
             {player.name}: {player.score}
           </li>
         ))}

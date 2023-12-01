@@ -1,9 +1,16 @@
-import GeneratedImage from "./game/generated-image";
+"use client";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
-export default async function Home() {
+export default function Home() {
+  const router = useRouter();
+  useEffect(() => {
+    router.push("/code");
+  }, []);
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <GeneratedImage />
-    </main>
+    <>
+      <h1 className="uppercase text-center">Välkommen till Holken</h1>
+    </>
   );
 }
