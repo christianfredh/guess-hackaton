@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-
+import Snowfall from "react-snowfall";
 export const Background = () => {
   const [showWelcomeMessage, setShowWelcomeMessage] = useState<boolean>(true);
 
@@ -14,6 +14,13 @@ export const Background = () => {
 
   return (
     <div className="h-screen flex items-center justify-center bg-cover bg-center bg-[url('/images/background.jpeg')]">
+      <Snowfall
+        style={{
+          position: "fixed",
+          width: "100vw",
+          height: "100vh",
+        }}
+      />
       <h1
         className={`opacity-${
           showWelcomeMessage ? "100" : "0"
