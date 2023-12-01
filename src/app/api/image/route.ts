@@ -12,10 +12,10 @@ export async function GET(request: NextRequest) {
       "response_as_dict": true,
       "attributes_as_list": false,
       "show_original_response": false,
-      "resolution": "256x256",
+      "resolution": "1024x1024",
       "num_images": 1,
       "providers": 'openai',
-      "text": request.nextUrl.searchParams.get("promt"),
+      "text": request.nextUrl.searchParams.get("prompt"),
     }),
   })
 
